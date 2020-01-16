@@ -34,20 +34,23 @@ int main()
 	}
 	else
 	{
-		//If the user inputs an invalid input, they'll be stuck in a loop until they do.
-		while (classNum != 1 && classNum != 2)
-		{
-			cout << "invalid input. Please try again.\n";
-			cout << "1 = Noble Knight. 2 = Rouge\n";
-			cin >> classNum;
-			if (classNum == 1) {
-				className = "Noble Knight";
-			}
-			else if (classNum == 2)
+		
+			//If the user inputs an invalid input, they'll be stuck in a loop until they do.
+			while (classNum != 1 && classNum != 2||classNum==NULL)
 			{
-				className = "Keen Rouge";
+				cout << "invalid input. Please try again.\n";
+				cout << "1 = Noble Knight. 2 = Rouge\n";
+				cin >> classNum;
+				if (classNum == 1) {
+					className = "Noble Knight";
+				}
+				else if (classNum == 2)
+				{
+					className = "Keen Rouge";
+				}
 			}
-		}
+		
+
 	}
 	// begins the story
 	cout << "\nAt the height of medieval era and in a far distant, mystical land,\n";
@@ -109,7 +112,7 @@ int main()
 					cout << "\nAs you sat there and do nothing, the oger notices you and throws his club at you.\n";
 					cout << "It was a direct hit and you die from the blow.\n\n Game over... Hint: try putting a valid input next time.\n";
 				}
-				
+
 			}
 			// if the player is a rouge
 			else
@@ -147,7 +150,7 @@ int main()
 					cout << "\nYou slowly sneak up to the oger and you quickly stab the oger in the back.\n";
 					cout << "It doesn't appear to be affective because oger slowly stands up, turns to you, pulls the knife out his back, and gives you a 'what the fuck bro' look.\n";
 					cout << "You give a nervous laugh and quickly makes towards the exit. The oger grabs and flings you into the wall, breaking ever bone you had.\n";
-					cout << "You slowly bleed out.\n\n Game over...\n"; 
+					cout << "You slowly bleed out.\n\n Game over...\n";
 				}
 				//if player does nothing
 				else
@@ -179,9 +182,9 @@ int main()
 	}
 	else
 	{
-	cout << "\nAs you sat there and did nothing, a poisonous snake comes by and bites your leg.\n";
-	cout << "You keel over and die from the poison...\n\n";
-	cout << "Game over... Hint: try putting in a valid input next time!\n";
+		cout << "\nAs you sat there and did nothing, a poisonous snake comes by and bites your leg.\n";
+		cout << "You keel over and die from the poison...\n\n";
+		cout << "Game over... Hint: try putting in a valid input next time!\n";
 	}
 	// make the function happy :)
 	return 0;
