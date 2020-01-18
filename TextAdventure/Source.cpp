@@ -73,7 +73,7 @@ int main()
 		//if player tries to attack
 		if (answer == "attack" || answer == "Attack")
 		{
-			cout << "\nYou tried to swing your but the spider got to you first and you died.\n\n";
+			cout << "\nYou tried to swing your weapon but the spider got to you first and you died.\n\n";
 			cout << "Game over...\n";
 		}
 		// if the player tries to block
